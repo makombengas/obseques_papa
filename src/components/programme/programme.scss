@@ -1,0 +1,72 @@
+@import "../../app/responsive.scss";
+.programme{
+    height: 100%;
+    margin-top: 10rem;
+    padding: 4rem 1.25rem;
+    @include sm{
+        padding: 0rem 1.25rem;
+        
+        }
+        h1{
+        text-align: center;
+        font-size: 6.5rem;
+       
+        font-family: "Alex Brush", cursive;
+        font-weight: 400;
+        @include xl{
+            font-size: 4.5rem;
+        }
+        @include sm{
+            font-size: 3rem;
+            text-align: center;
+            padding-top: 2rem;
+         }
+    }
+    .programmeContent{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1rem;
+        padding: 0 40rem;
+        @include xxl{
+            padding: 0 25rem;
+        }
+        @include xl{
+            padding: 0 15rem;
+        }
+        @include lg{
+            padding: 0 5rem;
+        }
+        @include sm{
+            padding: 0 1.25rem;
+        }
+        ul{
+     
+            font-size: 1.55rem;
+            padding: 1rem 0;
+         
+          
+            li{
+                padding: .7rem 0;
+                font-size: 1.8rem;
+                font-weight: 600;
+                @include xl{
+                    font-size: 1.5rem;
+                }
+                @include sm{
+                    font-size: 1.25rem;
+                }
+            }
+            p{
+                font-weight: 300;
+                padding: .5rem 0;
+                @include xl{
+                    font-size: 1.25rem;
+                }
+                @include sm{
+                    font-size: .85rem;
+                }
+            }
+        }
+    }
+}

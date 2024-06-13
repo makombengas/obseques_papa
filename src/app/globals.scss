@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(230,228,225);
+    background: radial-gradient(circle, rgba(230,228,225,1) 0%, rgba(230,228,225,1) 63%, rgba(255,255,255,1) 100%);
+    
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.active{
+    border-bottom: 4px solid #765231;
+}

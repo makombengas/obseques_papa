@@ -1,0 +1,130 @@
+
+@import "../../app/responsive.scss";
+.fairePart{
+    margin-top: 6rem;
+    padding: 0 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+  
+    h1{
+        text-align: center;
+        font-size: 6.5rem;
+      
+        font-family: "Alex Brush", cursive;
+        font-weight: 400;
+        @include xl{
+            font-size: 4.5rem;
+        }
+       
+        @include sm{
+            font-size: 3rem;
+         }
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        width: 100%;
+        overflow: hidden;
+        z-index: 100;
+        position: relative;
+        height: 100%;
+        margin-top: 2.5rem;
+        @include sm{
+            flex-direction: column;
+        }
+        @include xl{
+            gap: 0rem;
+        }
+        .imageContainer{
+           
+          
+            img{
+                object-fit: cover;
+                width: 12rem;
+                height: 45rem;
+                
+                @include sm{
+                   display: none;
+                }
+             
+            }
+        }
+        .left{
+            ul{
+         
+                font-size: 1.55rem;
+                padding: 2rem 0;
+                @include sm{
+                    padding: 0rem 0;
+                 }
+              
+                li{
+                    padding: .7rem 0;
+                    font-size: 1.25rem;
+                    @include xl{
+                        font-size: 1rem;
+                    }
+                    @include sm{
+                        font-size: .85rem;
+                    }
+                }
+            }
+        }
+        .right{
+            ul{
+                @include sm{
+                    padding: 1rem 0;
+                }
+                h3{
+                    font-size: 2.5rem;
+                    text-transform: uppercase;
+                 
+                    text-align: left;
+                    
+                    font-weight: 400;
+                    @include xl{
+                        font-size: 2rem;
+                    }
+                    @include sm{
+                        font-size: 1.5rem;
+                     }
+                  
+                }
+         
+                font-size: 1.55rem;
+                padding: 2rem 0;
+             
+                li{
+                    padding: .7rem 0;
+                    font-size: 1.25rem;
+                    @include xl{
+                        font-size: 1rem;
+                    }
+                    @include sm{
+                        font-size: .85rem;
+                    }
+                }
+            }
+        }
+        }
+            p{
+             width: 85%;
+                font-size: 1.5rem;
+                text-align: justify;
+                font-weight: 300;
+                padding: 2.5rem 0;
+                @include xl{
+                    width: 100%;
+                }
+                @include lg{
+                    font-size: 1rem;
+                }
+                @include sm{
+                    padding: 0rem 0;
+                }
+            }
+}

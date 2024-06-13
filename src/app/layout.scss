@@ -1,0 +1,32 @@
+@import "./responsive.scss";
+
+.layout{
+    height: 100vh;
+
+    margin-left: auto;
+    margin-right: auto;
+   
+    // @include xxl{
+    //     background-color: #f7c4c4 ;
+    //     max-width: 96rem;
+
+    // }
+    // @include xl{
+    //     background-color: #b7b5b5 ;
+    //     max-width: 80rem;
+
+    // }
+    // @include lg{
+    //     background-color: #8e8c8c ;
+    //     max-width: 64rem;
+
+    // }
+    // @include md{
+    //     background-color: #5c5959 ;
+    //     max-width: 46.125rem;
+    // }
+    // @include sm{
+    //     background-color: #535151 ;
+    //     max-width: 40rem;
+    // }
+}

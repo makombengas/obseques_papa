@@ -1,0 +1,178 @@
+
+@import "../../app/responsive.scss";
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+    position: fixed;
+    height: 4rem;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    background: rgb(230,228,225);
+    background: linear-gradient(90deg, rgba(230,228,225,1) 0%, rgba(230,228,225,1) 63%, rgba(230,228,225,1) 100%);
+    @include sm{
+       
+        background: rgb(230,228,225);
+        background: linear-gradient(90deg, rgba(230,228,225,1) 0%, rgba(230,228,225,1) 63%, rgba(230,228,225,1) 100%);
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        gap: .25rem ;
+        z-index: 2000;
+        a{
+            border-bottom: none !important;
+            h1{
+                color: #765231;
+                @include xl{
+                    font-size: 1.5rem;
+                }
+                @include lg{
+                    font-size: 1.25rem;
+                }
+                @include md{
+                    font-size: 1rem;
+                }
+              
+            }
+        }
+      
+    }
+    .right{
+        @include sm{
+            display: none;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            color: #765231;
+            @include md{
+                gap: 1.25rem;
+            }
+            li{
+                color: #765231;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    font-size: 1.15rem;
+                    color: #765231;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    @include xl{
+                        font-size: 1rem;
+                    }
+                    @include lg{
+                        font-size: .65rem;
+                    }
+                    @include md{
+                        font-size: .50rem;
+                    }
+                   
+                    &:hover{
+                        border-bottom: 2px solid #765231;
+                    }
+                }
+            }
+        }
+        .flags{
+            font-size: 1.25rem;
+            cursor: pointer;
+            @include md{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .handyMenu{
+        display: flex;
+        @include sm{
+            background: rgb(230,228,225);
+            background: linear-gradient(90deg, rgba(230,228,225,1) 0%, rgba(230,228,225,1) 63%, rgba(230,228,225,1) 100%);
+            position: absolute;
+            top: 55vh;
+            width: 100vw;
+            height: 100vh;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            padding-top: 5rem;
+            ul{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 1.25rem;
+                color: #765231;
+                @include md{
+                    gap: 1.25rem;
+                }
+                li{
+                    color: #765231;
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        font-size: 1.15rem;
+                        color: #765231;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        @include xl{
+                            font-size: 1rem;
+                        }
+                        @include lg{
+                            font-size: .65rem;
+                        }
+                        @include md{
+                            font-size: 1.15rem;
+                        }
+                       
+                        &:hover{
+                            border-bottom: 2px solid #765231;
+                        }
+                    }
+                }
+            }
+            .flags{
+                font-size: 1.25rem;
+                cursor: pointer;
+                @include md{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .hamburgerMenu{
+       display: none;
+       @include sm{
+        display: flex;
+        flex-direction: column;
+        gap: .35rem;
+        cursor: pointer;
+        position: relative;
+        hr{
+            width: 2rem;
+            background-color: #765231;
+            height: .15rem;
+            border: none;
+           transition: all .5s ease;
+        }
+        .leftMenu{
+            transform: rotate(-45deg);
+            transition: transform .5s ease;
+        }
+        .rightMenu{
+            transform: rotate(45deg);
+            position: absolute;
+            transition: transform .5s ease;
+        }
+        .centerMenu{
+           opacity: 0;
+           transition: opacity .5s ease;
+        }
+       }
+    }
+}

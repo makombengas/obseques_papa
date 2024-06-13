@@ -1,0 +1,86 @@
+
+@import "../../app/responsive.scss";
+.biographie{
+  
+    margin-top: 10rem;
+    padding: 4rem 1.25rem;
+    position: relative;
+    @include sm{
+        padding: 0rem 1.25rem;
+     
+     }
+    h1{
+        text-align: center;
+        font-size: 6.5rem;
+        font-family: "Alex Brush", cursive;
+        font-weight: 400;
+        @include xl{
+            font-size: 4.5rem;
+        }
+        @include sm{
+            font-size: 3rem;
+            text-align: center;
+         }
+    }
+    .top{
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 38.25rem;
+        flex-direction: column;
+        gap: 2rem;
+        @include xxl{
+            padding: 2rem 18.25rem;
+        }
+        @include lg{
+            padding: 2rem 8.25rem;
+        }
+        @include sm{
+            padding: 2rem 1.25rem;
+        }
+        p{
+            line-height: 2rem;
+            text-align: justify;
+            font-size: 1rem;
+        }
+        .content{
+           h2{
+            padding: 1.5rem 0;
+            @include sm{
+                font-size: 1.5rem;
+             }
+           }
+           ul{
+            li{
+                padding: .5rem 0;
+                @include sm{
+                   font-size: 1rem;
+                }
+            }
+           }
+        }
+    }
+    img{
+        width: 30%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 25%;
+        left: 60%;
+        opacity: .5;
+        @include xl{
+            opacity: .15;
+         }
+
+         @include sm{
+            opacity: .1;
+            left: 50%;
+            width: 100%;
+            top: 50%;
+            transform: translate(-50% ,-50%);
+            margin: 0;
+         }
+
+    }
+
+}
